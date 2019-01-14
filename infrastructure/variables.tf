@@ -21,7 +21,7 @@ variable "key_name" {
 }
 
 variable "inst_base_name" {
-    default = "mytraining"
+    default = "devops-playground"
 }
 
 variable "ssh_password" {
