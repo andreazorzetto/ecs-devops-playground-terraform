@@ -1,8 +1,8 @@
 variable "vpc_id" {
-    default = "vpc-e0d1c189"
+    default = "vpc-cd9f1ba9"
 }
 variable "vpc_subnet_id" {
-    default = "subnet-74aab20f"
+    default = "subnet-aa53f3f2"
 }
 
 variable "instances_to_deploy" {
@@ -14,10 +14,10 @@ variable "instance_type" {
 }
 
 variable "ami_id" {
-    default = "ami-dd3c0f36"
+    default = "ami-3548444c"
 }
 variable "key_name" {
-    default = "azecs"
+    default = "azecsd-ireland"
 }
 
 variable "inst_base_name" {
@@ -29,7 +29,7 @@ variable "ssh_password" {
 }
 
 variable "aws_region" {
-    default = "eu-central-1"
+    default = "eu-west-1"
 }
 variable "r53_zone_id" {
     default = "ZKL6DCZ2ESZ63"
