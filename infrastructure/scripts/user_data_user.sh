@@ -70,7 +70,11 @@ EOF
 
 sysctl --system
 
-su - centos -c "git clone https://github.com/andreazorzetto/ecs-devops-playground-resources.git"
+su - centos -c "git clone https://github.com/ecsdigital/devopsplayground-27-k8s-jenkins-pipeline.git"
+
+# Pre pull images ready to be installed
+kubeadm config images pull
+docker pull jenkins/jenkins:lts
 
 # Wetty
 systemctl enable wetty.service

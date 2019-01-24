@@ -38,7 +38,8 @@ resource "aws_security_group" "user_instances" {
     from_port = 0
     to_port   = 0
     protocol  = "-1"
-    cidr_blocks = ["185.183.107.0/24"]
+//    cidr_blocks = ["185.183.107.0/24"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
